@@ -1,0 +1,128 @@
+
+.row{
+ height: 500px;
+}
+
+p{
+  padding-top: 10px;
+}
+
+.container{
+  width: 600px;
+  text-align: center;
+  padding-top: 120px; 
+  padding-bottom: 120px;
+}
+
+.set{
+  padding-top: 30px;
+}
+
+.mycount{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  justify-content: space-evenly;
+}
+ 
+
+
+#uname{   
+  border-radius: 20px; 
+  border: 2px solid rgb(38, 109, 202);  
+  margin-top: 20px;  
+  text-align: center; 
+  padding: 7px; 
+  width: 220px; 
+  color: white; 
+}  
+
+#pass{   
+  border-radius: 20px;   
+  border: 2px solid rgb(38, 109, 202);   
+  margin-top: 5px; 
+  text-align: center;
+  padding: 7px;  
+  width: 220px;
+  color: white;   
+}
+
+h3{
+  font-size: 30px;
+  padding-bottom:5px ;
+  color: cornsilk;
+}
+
+
+
+.col{
+  height: 450px;
+  
+}
+
+
+li a{
+display:inline-block;
+color:red;
+text-decoration:none;	
+border-radius:20px;
+padding-left:20px;
+padding-right:20px;
+}	
+
+
+.my1{
+   padding-top:5px;
+   
+}
+
+.my{
+  border: 2px solid rgb(0, 128, 68);
+  margin: 20px;
+  border-radius: 40px;
+  width: 80px;
+  color: white;
+}
+
+
+.fa {
+  font-size: 20px;
+  text-decoration: none; 
+}
+
+.fa:hover {
+    color: turquoise;
+}
+
+.fa-facebook {
+ 
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-google {
+  color: white;
+}
+
+/*.icon{
+    padding: 5px;
+    margin: 5px;
+  
+}*/
+
+ 
+.fab{
+  font-size: 20px;
+  margin: 20px;
+  
+}
+
+span.name{
+  color:rgb(243, 13, 13)
+}
+
+

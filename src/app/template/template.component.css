@@ -1,0 +1,13 @@
+#email.ng-touched{
+    border-radius: 30px;
+  
+}
+
+#password.ng-touched{
+    background-color: turquoise;
+}
+
+.error{
+    color: red;
+}
+

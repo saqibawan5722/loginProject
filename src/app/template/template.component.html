@@ -1,0 +1,24 @@
+
+  <div class="container">
+<form #loginform="ngForm">
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" #email="ngModel" name="emaill" [ngModel]="users.email"  required>
+      <span class="error" *ngIf="email.invalid && email.touched">enter please email</span>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" [ngModel]="users.name"  required>
+    </div><br><br>
+   
+      <button (click)='Submit(loginform)' type="submit" class="btn btn-primary">Submit</button><br><br>
+      <!-- <button (click)='loginform.reset()' class="btn btn-primary">Reset</button><br> 
+      <button (click)='reset(loginform)' class="btn btn-primary">Reset</button><br> 
+
+  -->
+   
+   
+  </form>
+
+  </div> 
+ 

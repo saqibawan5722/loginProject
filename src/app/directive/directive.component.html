@@ -1,0 +1,207 @@
+
+<!-- data send parent to child
+{{name}}
+-->
+
+
+
+<!-- this is example 2 send data child to parent
+  <button (click)="fireEvent()">Send Event</button>-->
+
+
+
+  
+ <!--Use of pipe
+<p>{{value | uppercase}}</p>
+<p>{{value | lowercase}}</p>
+<p>{{value | titlecase}}</p>
+<p>{{value | slice:2 : 4 }}</p>
+date pipes
+<p>fullDate : {{toDate | date:'fullDate'}} </p>
+<p>fullDate : {{toDate | date:'fullDate' | uppercase}} </p>
+<p>longDate : {{toDate | date:'longDate'}} </p>
+<p>mediumDate : {{toDate | date:'mediumDate'}} </p>
+<p>shortDate : {{toDate | date:'shortDate'}} </p>
+<p>mediumTime : {{toDate | date:'mediumTime'}} </p>
+<p>dd-MM-y : {{toDate | date:'dd-MM-y'}} </p>-->
+
+
+
+
+<!-- use of mgmodel
+
+<h2>Example 2</h2>
+<input type="text" name="value" [(ngModel)]="value">
+<p> You entered {{value}}</p>
+<button (click)="clearValue()">Clear</button>
+-->
+
+
+
+<!--use of if-->
+<!--
+<div *ngIf="books.length > 6">
+  yes
+</div>
+<div *ngIf="books.length == 3">
+  No
+</div>
+-->
+
+
+
+
+<!--  use of if and else if -->
+
+<!--
+<div *ngIf="books.length > 6 ; else no courses">
+  yes
+</div>
+
+<ng-template #no courses>
+  no course
+ </ng-template>
+
+-->
+
+
+
+
+
+<!-- use of ngif then else-->
+<!--
+<div *ngIf="books.length > 5; then nocourses else yes"> </div>
+
+ <ng-template #nocourses>
+  no course
+ </ng-template>
+
+<ng-template #yes>
+  yes
+ </ng-template>
+-->
+
+
+
+
+
+
+<!--Use of nffor-->
+
+<!--
+    <table>
+      <thead class="table">
+        <th>
+          <tr>
+            <td>odd</td>
+            <td>s.no</td>
+            <td>id </td>
+            <td>name </td>
+            <td>email </td>
+          </tr>
+       </th>
+     </thead>
+   
+     <tbody class="table">
+       <th>
+          <tr *ngFor="let arr of data index as i odd as z">
+            <td>{{z}}</td>
+            <td>{{i+1}}</td>
+            <td>{{arr.id}}</td>
+            <td>{{arr.name}}</td>
+            <td>{{arr.email}}</td>
+          </tr>
+       </th>
+     </tbody>
+    </table> 
+     
+  -->
+
+
+
+
+
+
+<!-- USE OF NESTED ARRAY-->
+
+  <!--
+    <table>
+      <thead class="table">
+        <tr>
+          <th>Name</th>
+          <th>Mail ID</th>
+          <th>Skills</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees;">
+          <td>{{employee.name}}</td>
+          <td>{{employee.email}}</td>
+          <td>
+            <table>
+              <tbody class="table">
+                <tr *ngFor="let skill of employee.skills;">
+                  <td>{{skill.skill}}</td>
+                  <td>{{skill.exp}}</td>
+                </tr>
+              </tbody>
+            </table> 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  -->
+
+
+
+<!-- Use for trackby in ngfor
+  <table>
+    <thead class="table">
+      <th>
+        <tr>      
+          <td>s.no</td>
+          <td>id </td>
+          <td>name </td>
+          <td>email </td>
+        </tr>
+     </th>
+   </thead>
+ 
+   <tbody class="table">
+     <th>
+        <tr *ngFor="let arr of data index as i ">       
+          <td>{{i+1}}</td>
+          <td>{{arr.id}}</td>
+          <td>{{arr.name}}</td>
+          <td>{{arr.email}}</td>
+        </tr>
+     </th>
+   </tbody>
+  </table> 
+   
+  <button (click)="refresh()"> Click me</button>
+
+-->
+
+
+
+
+<!-- Use of ngswitch
+
+<h1>use of switch case</h1>
+<select (click)="setvalue($event)">
+  <option>--select--</option>
+  <option>one</option>
+  <option>two</option>
+  <option>three</option>
+</select>
+<div [ngSwitch] ="choose" >
+  <p *ngSwitchCase="'one'">yes you select first</p>
+  <p *ngSwitchCase="'two'">yes you select Second</p>
+  <p *ngSwitchCase="'three'">yes you select Three</p>
+</div>
+
+-->
+
+
+    

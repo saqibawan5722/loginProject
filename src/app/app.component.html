@@ -1,0 +1,82 @@
+
+
+
+
+
+<!--this is use for child to parent 
+<app-directive [name]="data"></app-directive> 
+-->
+
+
+
+
+<!-- example:1 this is use for parent to child
+
+<app-directive (additem)="upData($event)"></app-directive>
+-->
+
+
+
+
+
+<!-- example:2 this is use for parent to child
+<app-directive (childEvent)="message=$event"></app-directive>
+<h1>{{message}}</h1>-->
+
+
+
+
+
+
+<!--this is use for service-->
+<!--
+<app-child></app-child>
+<br><br>
+<app-child1></app-child1>
+
+-->
+
+
+
+
+
+
+<!-- 
+  use for template-->
+<!-- <app-template></app-template>  -->
+
+
+
+
+
+    <!-- <app-login></app-login>       -->
+      
+
+<!-- <app-directive></app-directive> -->
+
+
+
+<!---@@@@@@@@@@@@@@@@@@@@@@@@@@@@ USE ANGULAR MATERIAL @@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+  <!-- <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+-->
+
+
+<!-- <app-login></app-login> -->
+
+
+
+ <router-outlet></router-outlet>      

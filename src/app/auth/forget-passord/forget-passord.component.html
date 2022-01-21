@@ -1,0 +1,44 @@
+
+<body>
+    <div class="container">
+      <div class="row bg-dark">
+       <div class="col">
+         <form [formGroup]="contactForm">
+            <div class="set">
+    
+              <div style="position: fixed;right: 20px;top: 20px;">
+                <img style="width:150px;" src="assets/images/logo.png" alt="">
+              </div>
+              
+                            <h3 style="font-size: 20px; color: red">FORGET PASSWORD</h3>
+                            <p class="text-white">Please Enter E-mail</p>   
+    
+                            <div class="mycount">   
+                            <input  id="uname" class="bg-dark my3" type="email"  placeholder="Username" formControlName="username">          
+                            <div *ngIf="contactForm.controls['username'].invalid && contactForm.controls['username'].touched">
+                            <span class="name"> Enter Correct Email</span>>                
+                            </div>
+                           
+    
+                            <div>
+                            <span style="color: white; cursor: pointer;font-weight: 500; font-size: 18px;" (click)='back()'> Back to login</span>
+                            </div>  
+                        
+                             <!-- <a class="text-white bg-dark"> Forgot password?</a> -->
+                            </div>
+    
+                         <div class="my1">                    
+                         <!-- for simple groupform <button type="button" class="btn btn-secondary my" (click)='onSubmit(contactForm.value)'>login</button>-->
+                         <button type="button" class="btn btn-black my" (click)='onSubmit()' [disabled]= !contactForm.valid >Send</button>
+                         <!-- <button type="button" class="btn btn-secondary my" (click)='get()'>get</button>
+                          <button type="button" class="btn btn-secondary my" (click)='set()'>Set</button>
+                          <button type="button" class="btn btn-secondary my" (click)='patch()'>patch</button>
+                          <button type="button" class="btn btn-secondary my" (click)='reset()'>reset</button>-->
+                           
+                            </div>  
+                </div>        
+          </form>
+          </div>
+      </div>
+    </div> 
+    </body>
